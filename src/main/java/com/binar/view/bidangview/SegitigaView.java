@@ -1,8 +1,10 @@
 package com.binar.view.bidangview;
 
 import com.binar.entities.bangundatar.Segitiga;
+
 import com.binar.service.luas.HitungLuas;
 import com.binar.service.luas.HitungLuasSegitigaImpl;
+
 import com.binar.view.MenuView;
 
 import java.util.Scanner;
@@ -31,7 +33,7 @@ public class SegitigaView {
         segitiga.setTinggi(tinggi);
         System.out.println("\nProcessing ....");
 
-        System.out.println("Luas dari persegi panjang adalah " + luasSegitiga.hitungLuas(segitiga));
+        System.out.println("Luas dari "+ segitiga.getNama() + " adalah " + luasSegitiga.hitungLuas(segitiga));
         System.out.print("Ketik apa saja untuk kembali ke main menu : ");
         scanner.next();
         MenuView menuView = new MenuView();

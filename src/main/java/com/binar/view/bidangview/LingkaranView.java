@@ -3,6 +3,7 @@ package com.binar.view.bidangview;
 import com.binar.entities.bangundatar.Lingkaran;
 import com.binar.service.luas.HitungLuas;
 import com.binar.service.luas.HitungLuasLingkaranImpl;
+
 import com.binar.view.MenuView;
 
 import java.util.Scanner;
@@ -29,7 +30,7 @@ public class LingkaranView {
         lingkaran.setJariJari(jariJari);
         System.out.println("\nProcessing ....");
 
-        System.out.println("Luas dari persegi panjang adalah " + luasLingkaran.hitungLuas(lingkaran));
+        System.out.println("Luas dari "+ lingkaran.getNama() + " adalah " + luasLingkaran.hitungLuas(lingkaran));
         scanner.next();
 
         MenuView menuView = new MenuView();

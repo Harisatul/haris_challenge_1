@@ -1,8 +1,10 @@
 package com.binar.view.bidangview;
 
 import com.binar.entities.bangundatar.Persegi;
+
 import com.binar.service.luas.HitungLuas;
 import com.binar.service.luas.HitungLuasPersegiImpl;
+
 import com.binar.view.MenuView;
 
 import java.util.Scanner;
@@ -28,7 +30,7 @@ public class PersegiView {
         persegi.setSisi(sisi);
         System.out.println("\nProcessing ....");
 
-        System.out.println("Luas dari persegi panjang adalah " + luasPersegi.hitungLuas(persegi));
+        System.out.println("Luas dari " + persegi.getNama() + " adalah " + luasPersegi.hitungLuas(persegi));
         System.out.print("Ketik apa saja untuk kembali ke main menu : ");
         scanner.next();
 
